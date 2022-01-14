@@ -1,0 +1,20 @@
+<mat-card>
+  <mat-card class="margin">
+    <mat-card-title>Price Filter</mat-card-title>
+</mat-card>
+
+<mat-slider
+(click)="filter()"
+[(ngModel)]="rate"
+thumbLabel
+[displayWith]="formatLabel"
+tickInterval="1000"
+[step]="1000"
+[min]="111"
+[max]="55555"
+aria-label="units"></mat-slider><br>
+<div>
+<span>₹111</span>
+<span style="float: right;">{{rate || 55555}}</span>
+</div>
+</mat-card>

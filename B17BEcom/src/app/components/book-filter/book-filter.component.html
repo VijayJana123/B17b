@@ -1,0 +1,16 @@
+<mat-card>
+    <mat-selection-list [multiple]="false">
+        <mat-list-option class="all active" (click)="filter('')"><a>All Categories</a></mat-list-option>
+        <mat-divider></mat-divider>
+        <mat-list-option class="all"  (click)="filter('Biography')"><a>Biography</a></mat-list-option>
+        <mat-divider></mat-divider>
+        <mat-list-option class="all" (click)="filter('Fantasy')" >Fantasy</mat-list-option>
+        <mat-divider></mat-divider>
+        <mat-list-option class="all" (click)="filter('Fiction')" >Fiction</mat-list-option>
+        <mat-divider></mat-divider>
+        <mat-list-option class="all" (click)="filter('Mystery')" >Mystery</mat-list-option>
+        <mat-divider></mat-divider>
+        <mat-list-option class="all" (click)="filter('Romance')" >Romance</mat-list-option>
+      </mat-selection-list>   
+    
+</mat-card>
