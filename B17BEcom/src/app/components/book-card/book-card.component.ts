@@ -16,7 +16,6 @@ export class BookCardComponent implements OnInit {
     this.getBooks();
     this.data.search.subscribe((val:any)=>{
       this.searchKey=val;
-      console.log("from bookscomponet"+ this.searchKey)
     })
 
     this.data.filter.subscribe((res:any)=>{
@@ -35,3 +34,4 @@ export class BookCardComponent implements OnInit {
   }
 
 }
+

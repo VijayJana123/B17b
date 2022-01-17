@@ -1,21 +1,13 @@
 <div class="col-9">
   <div class="container">
     <div class="row">
-      <!-- what ever on the left of pipe will be value to the pipe.ts -->
       <ng-container *ngFor="let item of AllBooks | filter:searchKey:'title'" >
         <div class="card col-md-3">
           <img 
             src="https://bookcart.azurewebsites.net/Upload/{{item.coverFileName}}"
             alt=""
           />
-          <h5
-            style="
-              white-space: nowrap;
-              overflow: hidden;
-              text-overflow: ellipsis;
-              max-width: 100ch;
-            "
-          >
+          <h5>
             {{ item.title }}
           </h5>
           <p>

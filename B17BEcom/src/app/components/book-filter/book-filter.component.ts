@@ -15,11 +15,7 @@ export class BookFilterComponent implements OnInit {
   ngOnInit(): void {
     this.getBooks();
   }
-  
-
-  
-
-  getBooks(){
+ getBooks(){
     this.data.getBooks().subscribe(((res: any)=>{
       this.AllBooks=res 
       this.allbook=res      
